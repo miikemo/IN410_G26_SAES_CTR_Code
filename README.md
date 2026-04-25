@@ -1,4 +1,4 @@
-# S-AES CTR Mode — Cryptography Lab G26
+# S-AES CTR Mode - Cryptography Lab G26
 ### IN410 · Simplified AES · Counter Mode
 
 A fully interactive desktop application for encrypting, decrypting, brute-force attacking, and analysing data using **Simplified AES (S-AES)** in **CTR (Counter) mode** — built with Python and Tkinter, no external dependencies required.
@@ -19,7 +19,7 @@ Both files must be in the **same folder**.
 ## Requirements
 
 - Python **3.8 or newer**
-- No pip installs needed — only the Python standard library (`tkinter`, `threading`, `base64`, `os`, `math`, `time`)
+- No pip installs needed - only the Python standard library (`tkinter`, `threading`, `base64`, `os`, `math`, `time`)
 
 ---
 
@@ -134,7 +134,7 @@ To brute-force this ciphertext: use **Keyword Hint** mode, enter `James` as the 
 ## Project Structure
 
 ```
-├── saes_engine.py   # Crypto core
+├── saes_engine.py  
 │   ├── gf_mult()            GF(2⁴) multiplication
 │   ├── key_schedule()       16-bit key → K0, K1, K2
 │   ├── saes_encrypt_block() Single 16-bit block encryption
@@ -142,7 +142,7 @@ To brute-force this ciphertext: use **Keyword Hint** mode, enter `James` as the 
 │   ├── frequency_analysis() IoC + byte frequency
 │   └── keystream_blocks()   Keystream introspection for viz
 │
-└── saes_gui.py      # GUI
+└── saes_gui.py      
     ├── EncryptPage          Tab 1
     ├── DecryptPage          Tab 2
     ├── BruteForcePage       Tab 3
